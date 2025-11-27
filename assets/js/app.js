@@ -85,7 +85,7 @@ const renderPost = (post) => {
                 <img src="${post.autor_foto || 'https://via.placeholder.com/40'}" class="rounded-circle me-2" style="width: 40px; height: 40px; object-fit: cover;">
                 <div>
                     <h6 class="mb-0 fw-bold">${post.autor_nombre}</h6>
-                    <small class="text-muted">${post.fecha_publicacion}</small>
+                    <small class="text-muted">${moment(post.fecha_publicacion).fromNow()}</small>
                 </div>
             </div>
             <div class="card-body">
